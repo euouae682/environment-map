@@ -1,71 +1,29 @@
-Here, here, here we go!
+# environment-map
 
-So they're finally here, performing for you,
-If you know the words, you can join in too,
-Put your hands together, if you want to clap,
-As we take you through, this monkey rap!
+This template should help get you started developing with Vue 3 in Vite.
 
-Huh!
-D.K., Donkey Kong!!
+## Recommended IDE Setup
 
-He's the leader of the bunch, you know him well,
-He's finally back to kick some tail,
-His Coconut Gun can fire in spurts,
-If he shoots ya, it's gonna hurt,
-He's bigger, faster, and stronger too,
-He's the first member of the D.K. crew!
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-Huh!
-D.K., Donkey Kong!
-D.K., Donkey Kong is here!
+## Customize configuration
 
-This Kong's got style, so listen up dudes,
-She can shrink in size, to suit her mood,
-She's quick and nimble when she needs to be,
-She can float through the air and climb up trees!
-If you choose her, you'll not choose wrong,
-With a skip and a hop, she's one cool Kong!
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-Huh!
-D.K., Donkey Kong!
+## Project Setup
 
-He has no style, he has no grace,
-Th-th-th-this Kong has a funny face,
-He can handstand when he needs to,
-And stretch his arms out, just for you,
-Inflate himself just like a balloon,
-This crazy Kong just digs this tune!
+```sh
+npm install
+```
 
-Huh!
-D.K., Donkey Kong!
-D.K., Donkey Kong is here!
+### Compile and Hot-Reload for Development
 
-He's back again and about time too,
-And this time he's in the mood,
-He can fly real high with his jetpack on,
-With his pistols out, he's one tough Kong!
-He'll make you smile when he plays his tune,
-But Kremlings beware 'cause he's after you!
+```sh
+npm run dev
+```
 
-Huh!
-D.K., Donkey Kong!
-Huh!
+### Compile and Minify for Production
 
-Finally, he's here for you,
-It's the last member of the D.K. crew!
-This Kong's so strong, it isn't funny,
-Can make a Kremling cry out for mummy,
-Can pick up a boulder with relative ease,
-Makes crushing rocks seem such a breeze,
-He may move slow, he can't jump high,
-But this Kong's one hell* of a guy! (*Replaced with "heck" in later versions of the song.)
-
-Huh!
-C'mon Cranky, take it to the fridge!
-
-W-w-w-walnuts. peanuts. pineapple smells.
-Grapes. melons. oranges and coconut shells!
-Ahh yeah!
-Walnuts, peanuts, pineapple smells,
-Grapes, melons, oranges and coconut shells!
-Ahh yeah!
+```sh
+npm run build
+```
