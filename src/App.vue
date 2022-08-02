@@ -11,4 +11,11 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <style scoped>
+.wrapper {
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
 </style>
