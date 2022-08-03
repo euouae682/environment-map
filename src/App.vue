@@ -2,6 +2,7 @@
 import Header from './components/Header.vue'
 import Options from './components/Options.vue'
 import MainMap from './components/MainMap.vue'
+import MoreInfo from './components/MoreInfo.vue'
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import MainMap from './components/MainMap.vue'
   <main>
     <Options />
     <MainMap />
+    <MoreInfo v-if="showMore" />
   </main>
 </template>
 

@@ -13,7 +13,8 @@
 
 /* Body Styles */
 #app {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Times New Roman', Times, serif;
   min-height: 100%;
 }
 

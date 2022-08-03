@@ -24,6 +24,7 @@ header {
     height: 5em;
     line-height: 5em;
     border: 3px solid black;
+    background-color: rgb(16, 194, 0)
 }
 
 h1 {
@@ -47,10 +48,12 @@ li {
 a {
     padding: 25px;
     font-size: 20px;
+    color: black;
+    transition: color 0.2s;
 }
 
 a:hover {
-    background-color: rgb(231, 231, 231);
+    color: white;
     cursor: pointer;
 }
 </style>
