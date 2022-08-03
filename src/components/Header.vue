@@ -34,12 +34,14 @@ h1 {
 ul {
     float: right;
     list-style-type: none;
+    height: 100%;
     /* border: 1px solid red; */
 }
 
 li {
     float: left;
     text-align: center;
+    height: 100%;
 }
 
 a {
@@ -50,6 +52,5 @@ a {
 a:hover {
     background-color: rgb(231, 231, 231);
     cursor: pointer;
-    
 }
 </style>

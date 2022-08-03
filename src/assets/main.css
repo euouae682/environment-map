@@ -11,11 +11,17 @@
   font-weight: normal;
 }
 
-/* Font Styles */
-body {
+/* Body Styles */
+#app {
   font-family: 'Open Sans', sans-serif;
+  min-height: 100%;
 }
 
+/* Font Styles */
 h1 {
   font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
 }
