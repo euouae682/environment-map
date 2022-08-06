@@ -28,6 +28,8 @@ header {
 
 header, .map, aside {
   border: 3px solid black;
+  transition-duration: 1.5s;
+  transition-duration: border 1.5s;
 }
 
 /* Styles for dark mode */
@@ -36,13 +38,9 @@ header.dark {
 }
 
 .dark {
-  border: none;
   background-color: rgb(31, 31, 31);
   color: rgb(230, 230, 230);
-}
-
-.dark a {
-  color: rgb(230, 230, 230);
+  transition-duration: 1.5s;
 }
 
 </style>
