@@ -1,8 +1,9 @@
 <script setup>
+import { store } from '../store.js';
 </script>
 
 <template>
-  <aside>
+  <aside :class="{ dark: store.viewMode }">
     <h2>More Info</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Eleifend mi in nulla posuere sollicitudin aliquam. Nisi est sit amet facilisis magna etiam tempor orci eu. Sed viverra tellus in hac. Tellus in metus vulputate eu scelerisque felis. Vel pretium lectus quam id leo in vitae. Euismod quis viverra nibh cras pulvinar mattis nunc sed blandit. Et malesuada fames ac turpis egestas sed tempus. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Fermentum leo vel orci porta non pulvinar. A erat nam at lectus urna duis convallis. Pulvinar proin gravida hendrerit lectus a. Semper viverra nam libero justo laoreet. Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Dignissim sodales ut eu sem. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus.
 <br /><br />
@@ -20,7 +21,6 @@ Pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper. Ultric
 aside {
     width: 20%;
     height: 100%;
-    border: 3px solid black;
     padding: 15px;
     overflow: auto;
 }

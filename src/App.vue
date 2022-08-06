@@ -20,4 +20,29 @@ main {
   width: 100%;
   display: flex;
 }
+
+/* Styles for light mode */
+header {
+  background-color: rgb(16, 194, 0)
+}
+
+header, .map, aside {
+  border: 3px solid black;
+}
+
+/* Styles for dark mode */
+header.dark {
+  background-color: rgb(7, 80, 0);
+}
+
+.dark {
+  border: none;
+  background-color: rgb(31, 31, 31);
+  color: rgb(230, 230, 230);
+}
+
+.dark a {
+  color: rgb(230, 230, 230);
+}
+
 </style>

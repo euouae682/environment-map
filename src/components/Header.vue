@@ -1,4 +1,6 @@
 <script setup>
+import { store } from '../store.js';
+
 defineProps({
   name: {
     type: String,
@@ -8,7 +10,7 @@ defineProps({
 </script>
 
 <template>
-  <header>
+  <header :class="{ dark: store.viewMode }">
     <h1>{{ name }}</h1>
     <ul>
         <li><a>About</a></li>
@@ -23,8 +25,6 @@ header {
     /* color: rgb(240, 240, 240); */
     height: 5em;
     line-height: 5em;
-    border: 3px solid black;
-    background-color: rgb(16, 194, 0)
 }
 
 h1 {
@@ -52,8 +52,12 @@ a {
     transition: color 0.2s;
 }
 
+.dark a {
+  color: white;
+}
+
 a:hover {
-    color: white;
+    color: rgb(138, 138, 138);
     cursor: pointer;
 }
 </style>

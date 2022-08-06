@@ -1,8 +1,9 @@
 <script setup>
+import { store } from '../store.js';
 </script>
 
 <template>
-  <div class="map">
+  <div class="map" :class="{ dark: store.viewMode }">
     <img src="../assets/map.PNG">
   </div>
 </template>
@@ -11,7 +12,6 @@
 .map {
     width: 80%;
     height: 100%;
-    border: 3px solid black;
     overflow: auto;
 }
 </style>
