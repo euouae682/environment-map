@@ -11,7 +11,18 @@
   font-weight: normal;
 }
 
+/* Body Styles */
+#app {
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Times New Roman', Times, serif;
+  min-height: 100%;
+}
+
 /* Font Styles */
-body {
-  font-family: 'Open Sans', sans-serif;
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
 }

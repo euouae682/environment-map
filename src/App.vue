@@ -1,21 +1,23 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import Options from './components/Options.vue'
+import MainMap from './components/MainMap.vue'
+import MoreInfo from './components/MoreInfo.vue'
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <HelloWorld msg="Hello World!" />
-    </div>
-  </header>
+  <Header name="Environment Map" />
+  <main>
+    <Options />
+    <MainMap />
+    <MoreInfo v-if="showMore" />
+  </main>
 </template>
 
 <style scoped>
-.wrapper {
-  margin: auto;
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
+main {
+  height: 840px; /* Hardcoded lol (for now) */
+  width: 100%;
+  display: flex;
 }
 </style>
