@@ -1,8 +1,11 @@
 <script setup>
+/* Import components needed */
 import Header from './components/Header.vue'
 import Options from './components/Options.vue'
 import MainMap from './components/MainMap.vue'
 import MoreInfo from './components/MoreInfo.vue'
+/* Import state "store" */
+import { store } from './store.js';
 </script>
 
 <template>
@@ -10,14 +13,17 @@ import MoreInfo from './components/MoreInfo.vue'
   <main>
     <Options />
     <MainMap />
-    <MoreInfo v-if="showMore" />
+    <!-- Only render `MoreInfo` if `showMore` is true -->
+    <MoreInfo v-if="store.showMore" />
   </main>
 </template>
 
 <style scoped>
 main {
+  /* Set main panel of webpage to remaining size of the screen */
   height: 840px; /* Hardcoded lol (for now) */
   width: 100%;
+  /* Allow subpanels (i.e. options, map, moreInfo) to align horizontally */
   display: flex;
 }
 
@@ -28,8 +34,8 @@ header {
 
 header, .map, aside {
   border: 3px solid black;
+  /* Creates transition between light/dark mode toggling */
   transition-duration: 1.5s;
-  transition-duration: border 1.5s;
 }
 
 /* Styles for dark mode */
@@ -40,7 +46,5 @@ header.dark {
 .dark {
   background-color: rgb(31, 31, 31);
   color: rgb(230, 230, 230);
-  transition-duration: 1.5s;
 }
-
 </style>

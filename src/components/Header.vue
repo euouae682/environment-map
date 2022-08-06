@@ -14,7 +14,7 @@ defineProps({
     <h1>{{ name }}</h1>
     <ul>
         <li><a>About</a></li>
-        <l1><a>Additional Sources</a></l1>
+        <li><a>Additional Sources</a></li>
     </ul>
   </header>
 </template>
