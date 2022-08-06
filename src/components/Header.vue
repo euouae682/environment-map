@@ -56,8 +56,12 @@ a {
   color: white;
 }
 
+.dark a:hover {
+  color: rgb(138, 138, 138);
+}
+
 a:hover {
-    color: rgb(138, 138, 138);
+    color: white;
     cursor: pointer;
 }
 </style>
