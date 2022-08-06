@@ -8,7 +8,7 @@ import { store } from '../store.js';
   <div class="map" :class="{ dark: store.viewMode }">
     <!-- PLACEHOLDER IMAGE -->
     <img v-if="store.viewMode" src="../assets/darkmap.PNG">
-    <img src="../assets/lightmap.PNG">
+    <img v-else src="../assets/lightmap.PNG">
   </div>
 </template>
 
