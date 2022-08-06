@@ -15,7 +15,7 @@ defineProps({
   <header :class="{ dark: store.viewMode }">
     <h1>{{ name }}</h1>
     <ul>
-      <li><a>Options</a></li>
+      <li><a @click="store.toggleOptions">Options</a></li>
       <li><a>About</a></li>
       <li><a>Additional Sources</a></li>
     </ul>
