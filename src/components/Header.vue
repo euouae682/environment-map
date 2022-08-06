@@ -1,4 +1,5 @@
 <script setup>
+/* Import state "store" */
 import { store } from '../store.js';
 
 defineProps({
@@ -10,11 +11,13 @@ defineProps({
 </script>
 
 <template>
+  <!-- Add `dark` class if dark mode is toggled on -->
   <header :class="{ dark: store.viewMode }">
     <h1>{{ name }}</h1>
     <ul>
-        <li><a>About</a></li>
-        <li><a>Additional Sources</a></li>
+      <li><a>Options</a></li>
+      <li><a>About</a></li>
+      <li><a>Additional Sources</a></li>
     </ul>
   </header>
 </template>
@@ -52,6 +55,7 @@ a {
     transition: color 0.2s;
 }
 
+/* Dark mode styles for navbar text */
 .dark a {
   color: white;
 }

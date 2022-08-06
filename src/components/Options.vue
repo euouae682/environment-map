@@ -1,16 +1,21 @@
 <script setup>
+/* Import state "store" */
 import { store } from '../store.js';
 </script>
 
 <template>
+  <!-- Add `dark` class if dark mode is toggled on -->
   <aside :class="{ dark: store.viewMode }">
     <h2>Options</h2>
+    <!-- Checkbox bound to `viewMode` state -->
     <p>Enable Dark Mode</p>
     <input type="checkbox" v-model="store.viewMode">
     <br /><br />
+    <!-- Checkbox bound to `showMore` state -->
     <p>Show "Show More" Panel (DEBUG ONLY)</p>
     <input type="checkbox" v-model="store.showMore">
     <br /><br />
+    <!-- PLACEHOLDER TEXT -->
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Eleifend mi in nulla posuere sollicitudin aliquam. Nisi est sit amet facilisis magna etiam tempor orci eu. Sed viverra tellus in hac. Tellus in metus vulputate eu scelerisque felis. Vel pretium lectus quam id leo in vitae. Euismod quis viverra nibh cras pulvinar mattis nunc sed blandit. Et malesuada fames ac turpis egestas sed tempus. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Fermentum leo vel orci porta non pulvinar. A erat nam at lectus urna duis convallis. Pulvinar proin gravida hendrerit lectus a. Semper viverra nam libero justo laoreet. Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Dignissim sodales ut eu sem. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus.
 <br /><br />
 Laoreet id donec ultrices tincidunt arcu non. Vulputate eu scelerisque felis imperdiet proin fermentum. Massa tempor nec feugiat nisl. Suspendisse ultrices gravida dictum fusce ut. At tempor commodo ullamcorper a. Nisl rhoncus mattis rhoncus urna. Purus in mollis nunc sed id semper risus in. Non enim praesent elementum facilisis leo vel fringilla est ullamcorper. Arcu non odio euismod lacinia at quis. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Faucibus et molestie ac feugiat. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus.
