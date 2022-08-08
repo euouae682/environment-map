@@ -1,4 +1,7 @@
 <script setup>
+/* Import state "store" */
+import { store } from '../store.js';
+
 defineProps({
   name: {
     type: String,
@@ -8,11 +11,13 @@ defineProps({
 </script>
 
 <template>
-  <header>
+  <!-- Add `dark` class if dark mode is toggled on -->
+  <header :class="{ dark: store.viewMode }">
     <h1>{{ name }}</h1>
     <ul>
-        <li><a>About</a></li>
-        <l1><a>Additional Sources</a></l1>
+      <li><a @click="store.toggleOptions">Options</a></li>
+      <li><a>About</a></li>
+      <li><a>Additional Sources</a></li>
     </ul>
   </header>
 </template>
@@ -23,8 +28,6 @@ header {
     /* color: rgb(240, 240, 240); */
     height: 5em;
     line-height: 5em;
-    border: 3px solid black;
-    background-color: rgb(16, 194, 0)
 }
 
 h1 {
@@ -50,6 +53,15 @@ a {
     font-size: 20px;
     color: black;
     transition: color 0.2s;
+}
+
+/* Dark mode styles for navbar text */
+.dark a {
+  color: white;
+}
+
+.dark a:hover {
+  color: rgb(138, 138, 138);
 }
 
 a:hover {

@@ -1,17 +1,21 @@
 <script setup>
+/* Import state "store" */
+import { store } from '../store.js';
 </script>
 
 <template>
-  <div class="map">
-    <img src="../assets/map.PNG">
+  <!-- Add `dark` class if dark mode is toggled on -->
+  <div class="map" :class="{ dark: store.viewMode }">
+    <!-- PLACEHOLDER IMAGE -->
+    <img v-if="store.viewMode" src="../assets/darkmap.PNG">
+    <img v-else src="../assets/lightmap.PNG">
   </div>
 </template>
 
 <style scoped>
 .map {
-    width: 80%;
+    width: 100%;
     height: 100%;
-    border: 3px solid black;
     overflow: auto;
 }
 </style>
