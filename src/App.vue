@@ -11,7 +11,7 @@ import { store } from './store.js';
 <template>
   <Header name="Environment Map" />
   <main>
-    <Options v-if="store.showOptions" />
+    <Options />
     <MainMap />
     <!-- Only render `MoreInfo` if `showMore` is true -->
     <MoreInfo v-if="store.showMore" />

@@ -5,7 +5,7 @@ import { store } from '../store.js';
 
 <template>
   <!-- Add `dark` class if dark mode is toggled on -->
-  <aside :class="{ dark: store.viewMode }">
+  <aside :class="{ dark: store.viewMode, shown: store.showOptions }">
     <h2>Options</h2>
     <!-- Checkbox bound to `viewMode` state -->
     <p>Enable Dark Mode</p>
@@ -30,13 +30,21 @@ Pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper. Ultric
 
 <style scoped>
 aside {
-    width: 20%;
+    width: 0;
     height: 100%;
-    padding: 15px;
     overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
 }
 
 aside h2 {
     text-align: center;
+}
+
+.shown {
+  width: 20%;
+  padding: 15px;
 }
 </style>
