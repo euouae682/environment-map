@@ -37,6 +37,7 @@ aside {
     top: 0;
     left: 0;
     background-color: white;
+    opacity: 0;
 }
 
 aside h2 {
@@ -46,5 +47,6 @@ aside h2 {
 .shown {
   width: 20%;
   padding: 15px;
+  opacity: 100;
 }
 </style>
