@@ -17,7 +17,7 @@ import { store } from '../store.js';
 .map {
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
 }
 
 iframe {
