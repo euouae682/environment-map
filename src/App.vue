@@ -11,7 +11,7 @@ import { store } from './store.js';
 <template>
   <Header name="Environment Map" />
   <main>
-    <Options v-if="store.showOptions" />
+    <Options />
     <MainMap />
     <!-- Only render `MoreInfo` if `showMore` is true -->
     <MoreInfo v-if="store.showMore" />
@@ -21,7 +21,7 @@ import { store } from './store.js';
 <style scoped>
 main {
   /* Set main panel of webpage to remaining size of the screen */
-  height: 840px; /* Hardcoded lol (for now) */
+  height: calc(100vh - 5em); /* Good enough (for now) */
   width: 100%;
   /* Allow subpanels (i.e. options, map, moreInfo) to align horizontally */
   display: flex;
