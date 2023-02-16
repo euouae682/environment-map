@@ -10,5 +10,7 @@ export const store = reactive({
         store.showOptions = !store.showOptions;
     },
     /* `showMore`: determines whether the moreInfo panel is shown */
-    showMore: false
+    showMore: false,
+    /* `showModal`: determines whether the pop-up after a country is clicked is shown */
+    showModal: false
 });

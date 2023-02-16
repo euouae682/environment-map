@@ -4,6 +4,7 @@ import Header from './components/Header.vue'
 import Options from './components/Options.vue'
 import MainMap from './components/MainMap.vue'
 import MoreInfo from './components/MoreInfo.vue'
+import Modal from './components/Modal.vue';
 /* Import state "store" */
 import { store } from './store.js';
 </script>
@@ -13,6 +14,7 @@ import { store } from './store.js';
   <main>
     <Options />
     <MainMap />
+    <!-- <Modal /> -->
     <!-- Only render `MoreInfo` if `showMore` is true -->
     <MoreInfo v-if="store.showMore" />
   </main>
