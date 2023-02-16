@@ -3168,6 +3168,7 @@
 .landxx:hover
 {
     fill: #a5a5a5;
+    cursor: pointer;
 }
 
 /*

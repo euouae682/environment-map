@@ -29,6 +29,7 @@ Pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper. Ultric
 </template>
 
 <style scoped>
+/* Sidebar styles */
 aside {
     width: 0;
     height: 100%;

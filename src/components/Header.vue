@@ -15,6 +15,7 @@ defineProps({
   <header :class="{ dark: store.viewMode }">
     <h1>{{ name }}</h1>
     <ul>
+      <!-- Toggle options sidebar if clicked in the navbar -->
       <li><a @click="store.toggleOptions">Options</a></li>
       <li><a>About</a></li>
       <li><a>Additional Sources</a></li>
@@ -23,9 +24,8 @@ defineProps({
 </template>
 
 <style scoped>
+/* Header styles */
 header {
-    /* background-color: rgb(12, 139, 0); */
-    /* color: rgb(240, 240, 240); */
     height: 5em;
     line-height: 5em;
 }
@@ -35,19 +35,21 @@ h1 {
     padding-left: 0.75em;
 }
 
+/* Navbar styles */
 ul {
     float: right;
     list-style-type: none;
     height: 100%;
-    /* border: 1px solid red; */
 }
 
+/* Navbar item styles */
 li {
     float: left;
     text-align: center;
     height: 100%;
 }
 
+/* Navbar link styles */
 a {
     padding: 25px;
     font-size: 20px;
